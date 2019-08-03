@@ -61,7 +61,7 @@
 \usepackage{array,keycommand}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
+\usepackage[hmargin=1.1cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 
 % Publications
@@ -99,14 +99,14 @@
 
 % Name command
 \newcommand{\namesection}[2]{
-	\fontsize{40pt}{60pt}
+	\fontsize{35pt}{60pt}
 	\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
 	\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 }
 
 \newcommand{\headertable}[4]{
 	\fontspec[Path = fonts/lato/]{Lato-Lig}
-	\fontsize{12pt}{12pt}
+	\fontsize{10pt}{10pt}
 	\selectfont
 	\renewcommand{\arraystretch}{2}
 	\begin{tabular}{l l}
@@ -123,15 +123,15 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcommand{\header}[0]{
 	\hspace*{-\parindent}%
-	\begin{minipage}{0.4\textwidth}
+	\begin{minipage}{0.5\textwidth}
 		\newdimen\headerheight
 		\headerheight=\textheight
 		\namesection{\ting@firstname}{\ting@lastname}
 	\end{minipage}
-  	\begin{minipage}{0.6\textwidth}
+  	\begin{minipage}{0.5\textwidth}
     	\hfill
 		\headertable{\textcolor{accent}{\faPhone} \, \ting@phone}
-		{\href{https://www.\ting@website}{\textcolor{accent}{\faChain} \, \ting@website}}
+		{\href{http://www.\ting@website}{\textcolor{accent}{\faChain} \, \ting@website}}
 		{\href{mailto:\ting@email}{\textcolor{accent}{\faEnvelope} \, \ting@email}}
 		{\href{https://www.github.com/\ting@github}{\textcolor{accent}{\faGithub} \, github.com/\ting@github}}
 	\end{minipage} \\
@@ -160,6 +160,11 @@
   \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}
   \selectfont {| \, \textcolor{accent}{#2} \hfill \textcolor{date}{#3} \\} \normalfont}
 
+\newcommand{\projectsumbal}[1]{
+	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont
+  \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}
+   \normalfont}
+
 \newcommand{\involvement}[2]{
 	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont
   \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}
@@ -168,6 +173,9 @@
 % Descriptors command
 \newcommand{\descript}[1]{
 	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+
+\newcommand{\descriptproject}[1]{
+	\color{accent}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\content}[1]{
 	\color{accent}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont #1\\ \normalfont}
