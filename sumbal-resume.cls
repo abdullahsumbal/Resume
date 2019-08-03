@@ -12,7 +12,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Intro Options
-\ProvidesClass{allanwang-resume}[2017/09/28 CV class]
+\ProvidesClass{sumbal-resume}[2017/09/28 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
