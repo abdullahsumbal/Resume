@@ -15,7 +15,7 @@
 \ProvidesClass{sumbal-resume}[2017/09/28 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
-\DeclareOption*{%
+\DeclareOption*{
 	\PassOptionsToClass{\CurrentOption}{article}
 }
 \ProcessOptions\relax
@@ -150,6 +150,7 @@
 % Subeadings command
 \titleformat{\subsection}{
 	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+	
 
 \newcommand{\runsubsection}[1]{
 	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
@@ -179,6 +180,10 @@
 
 \newcommand{\content}[1]{
 	\color{accent}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont #1\\ \normalfont}
+	
+\newcommand{\contentBlue}[1]{
+	\color{accent}\raggedright\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont {#1 \\} \normalfont
+	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{13pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{ 

@@ -5,6 +5,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \usepackage{tikz}
+\usepackage{verbatim}
 \begin{document}
 
 \firstname{Abdullah} 
@@ -16,7 +17,7 @@
 \header
 
 % \hspace*{-\parindent}%
-\begin{minipage}[t]{0.33\textwidth}
+%\begin{minipage}[t]{0.33\textwidth}
 % \begin{minipage}[t]{0.66\textwidth}
 
 % \resizebox{0.628\textwidth}{!}{
@@ -31,46 +32,89 @@
 
 % \vspace{0.26cm}
 
-\section{Education}
-\subsection{\href{http://www.abdullahsumbal.com/doc/transcript.pdf}{McGill University}}
-\descript{\href{http://www.abdullahsumbal.com/doc/transcript.pdf}{BS in Software Engineering}}
-\content{Jan 2020 | Montreal, QC}
-\href{http://www.abdullahsumbal.com/doc/transcript.pdf}{Cum. GPA: 3.64 / 4.0}\\
-\descript{Scholarship and award}
-Hugh Brock Scholarship \\
-David Selby SURE Award
-\sectionsep
 
-\section{Course Work }
-\subsection{\href{http://www.abdullahsumbal.com/doc/transcript.pdf}{Undergraduate}}
-\content{Computer Science}
-Algorithms \& Data Structures \\
-Software Design \\
-Applied Machine Learning \\
-Operating Systems \\
-Artificial Intelligence \\
-Database Systems\\
-Programming Challenges \\
-Software Validation \\
-\content{Mathematics}
-Probability \& Random Signals
-Linear Algebra \& Geometry \\
-Discrete Structures \\
-Calculus \\
+
+
+
+
+\section{Education}{}
+\noindent\project{McGill University}{Software Engineering (GPA: 3.6 / 4.0)}{2020 January}
 \sectionsep
 
 \section{Skills}
-\subsection{Programming}
-\content{Proficient}
-Python \tb Java \tb C \tb Git \\
-\content{Experienced}
-SQL \tb C++ \tb Bash \tb JavaScript \tb GIS \tb HTML \tb CSS \\
-\content{Familiar}
-OCaml \tb VHDL \tb \LaTeX \\
-\subsection{Frameworks}
-Flask \tb Caffe \tb TensorFlow \tb Bootstrap \tb React \tb Scikit-learn \tb QT\\
+\subsection{Languages}
+%\subsectionBlue{Languages}
+\normalfont{Python \tb Java \tb C \tb SQL \tb C++ \tb Bash \tb JavaScript  \tb HTML \tb CSS \\}
+\vspace{2pt}\subsection{Framework \& Libraries}
+\normalfont{Spring \tb Bootstrap \tb Node.js \tb Express.js \tb  React \tb Flask \tb Scikit-learn \tb QT \tb VHDL \tb \LaTeX \tb TensorFlow \tb Logback\\}
+\vspace{2pt}\subsection{Tools}
+\normalfont{Git \tb Linux \tb Docker \tb  OpenShift \tb Maven \tb Gradle \tb Jira \tb Firebase \tb CI/CD \tb Udeploy \tb Jenkins \tb TeamCity \\}
 \sectionsep
 
+\section{Experience \& Research}
+
+\project{Software Developer - AVP}{Citi Bank}{March 2020 - Present}
+%\vspace{\topsep}
+\begin{tightemize}
+\item Develop Citi's digital marketplace for APIs for internal and external customers.
+\item Addressed priority production bugs and improvements in Java Spring Boot API REST services. 
+\item Containerized applications and automated build pipelines (CI/CD) using Jenkins and OpenShift.
+\item Managed employee training for all new recruits and offered continuous guidance and mentorship on best practices.
+\end{tightemize}
+	
+\project{GIS Web Developer}{IHSP}{Jan 2019 - April 2021}
+%\vspace{\topsep}
+\begin{tightemize}
+\item Optimized web services performance by $50 \%$ for \href{http://lifesatisfaction.ca}{lifesatisfaction.ca} using open source technologies.
+\item Developed data load process to generate and host vector tiles for current and future projects.
+\end{tightemize}
+
+\project{Research Assistant}{Faculty of Medicine}{May 2019 - Aug 2019}
+
+\begin{tightemize}
+\item Developed a prediction model to distinguish between various voice types using Machine Learning algorithms. 
+\item Performed analysis on the impact of voice fatigue on running speech using a neck surface accelerometer.
+\end{tightemize}
+
+
+\project{Software Intern}{General Electric}{Sep 2016 - Dec 2017}
+\begin{tightemize}
+\item Improved team productivity by designing automation tools for regression testing. 
+\item Discovered critical issues by redesigning the database validation system which prevented product recall.
+\item Developed tools to aid the team in visualizing the communication tree between nodes.
+\end{tightemize}
+
+\sectionsep
+
+\section{Projects}
+
+\projectsumbal{\mygithub{data-analysis}[Battery Data Analysis]} \\
+\descriptproject{Python | PyQt}
+\begin{tightemize}
+\item Developed data analysis plotting tools for the Chemistry Department at McGill University which will aid in chemical battery research for the next $20 \ years$. 
+\item Designed an interface which allows data communication between a pH meter and the experiment apparatus. 
+\end{tightemize}
+
+\projectsumbal{\mygithub{capstoneproject}[3D Visualization of human Spine]} \\
+\descriptproject{Python | PyQt}
+\begin{tightemize}
+\item Developed a desktop application for rendering the human spine by combining X-Ray, MRI and surface topography to facilitate in surgery. 
+\end{tightemize}
+
+\projectsumbal{\mygithub{spin-bike-dashboard}[Remote PC Shutdown automation]} \\
+\descriptproject{Python | React | Authentication }
+\begin{tightemize}
+\item Developed an application to remotely shutdown using Firebase services and Python QT application
+\end{tightemize}
+
+\projectsumbal{\mygithub{SSD_Tracker}[SSD Tracker]} \\
+\descriptproject{C++ | Caffe}
+\begin{tightemize}
+\item Developed an application to count, detect and track objects in a video stream in real-time running at $30 \ frames/sec$ using single shot multi-box detector deep learning algorithm.
+\end{tightemize}
+
+
+\begin{comment}
 \section{Open Source}
 \subsection{Other Projects}
 \content{\href{https://github.com/abdullahsumbal}{github.com}}
@@ -83,9 +127,9 @@ Flask \tb Caffe \tb TensorFlow \tb Bootstrap \tb React \tb Scikit-learn \tb QT\\
 \pair{\githublink{abdullahsumbal}{data-analysis}{Data Analysis}}{Combi Cell Plotter} \\
 \pair{\githublink{abdullahsumbal}{mvc_template}{MVC}}{Software Architecture } \\
 \pair{\githublink{abdullahsumbal}{Augmented-Reality-Unity}{AR}}{AR Unity Games} \\
-\end{minipage}
+%\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth}
+%\begin{minipage}[t]{0.66\textwidth}
 \section{Experience \& Research}
 
 \project{GIS Web Developer}{IHSP}{Jan 2019 - Present}
@@ -111,40 +155,8 @@ Flask \tb Caffe \tb TensorFlow \tb Bootstrap \tb React \tb Scikit-learn \tb QT\\
 \end{tightemize}
 
 \sectionsep
-\section{Projects}
+\end{comment}
 
-\projectsumbal{\mygithub{data-analysis}[Battery Data Analysis]} \\
-\descriptproject{Python | PyQt}
-\begin{tightemize}
-\item Developed data analysis plotting tools for the Chemistry Department at McGill University which will aid in chemical battery research for the next $20 \ years$. 
-\item Designed an interface which allows data communication between a pH meter and the experiment apparatus. 
-\end{tightemize}
-
-\projectsumbal{\mygithub{capstoneproject}[3D Visualization of human Spine]} \\
-\descriptproject{Python | PyQt}
-\begin{tightemize}
-\item Developed a desktop application for rendering the human spine by combining X-Ray, MRI and surface topography to facilitate in surgery. 
-\end{tightemize}
-
-\projectsumbal{\mygithub{spin-bike-dashboard}[Spin Bike Gardens]} \\
-\descriptproject{Python | C | JavaScript | HTML | CSS}
-\begin{tightemize}
-\item Developed an embedded system by using and programming an Atmega microcontroller to record spin bike user data.
-\item Built a website and a database to host the collected data.
-\end{tightemize}
-
-\projectsumbal{\mygithub{SSD_Tracker}[SSD Tracker]} \\
-\descriptproject{C++ | Caffe}
-\begin{tightemize}
-\item Developed an application to count, detect and track objects in a video stream in real time running at $30 \ frames/sec$ using single shot multi-box detector deep learning algorithm.
-\end{tightemize}
-
-\projectsumbal{\href{https://www.cs.mcgill.ca/~msumba/mini/gift.html}{Semester Survivor Unity Game}} \\
-\descriptproject{C\# | Unity Engine}
-\begin{tightemize}
-\item Developed a web game in Unity as a birthday present for a friend.
-\end{tightemize}
-
-\end{minipage}
+%\end{minipage}
 \end{document}
 
